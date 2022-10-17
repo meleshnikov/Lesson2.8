@@ -1,4 +1,4 @@
-package task1;
+package hw1;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println(products);
 
-        products.remove(milk);
+        products.getProducts().remove(milk);
         System.out.println(products);
 
         products.check(meat);

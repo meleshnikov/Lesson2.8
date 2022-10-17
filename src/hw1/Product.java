@@ -1,4 +1,4 @@
-package task1;
+package hw1;
 
 import java.util.Objects;
 
@@ -62,6 +62,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s: цена %.1f, %.1f кг", getName(), getPrice(), getWeight());
+        return String.format("%s: цена %.1f руб, %.1f кг", getName(), getPrice(), getWeight());
     }
 }
