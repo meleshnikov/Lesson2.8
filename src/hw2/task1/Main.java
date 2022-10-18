@@ -20,7 +20,6 @@ public class Main {
         products2.add(new Product("тесто", 20, 0.9));
         products2.add(new Product("сыр", 60, 0.3));
 
-
         Recipe recipe1 = new Recipe("Цезарь", products1);
         Recipe recipe2 = new Recipe("Пицца", products2);
         Recipe recipe3 = new Recipe("Пицца", products1);
@@ -33,7 +32,6 @@ public class Main {
         add(recipes, recipe4);
 
         System.out.println(recipes);
-
     }
 
     private static void add(Set<Recipe> recipes, Recipe recipe) {

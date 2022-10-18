@@ -24,7 +24,6 @@ public class Recipe {
         } else {
             throw new IllegalArgumentException("products not found");
         }
-
         this.price = sum();
     }
 

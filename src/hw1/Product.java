@@ -3,7 +3,6 @@ package hw1;
 import java.util.Objects;
 
 public class Product {
-
     private final String name;
     private double price;
     private double weight;
@@ -14,7 +13,6 @@ public class Product {
         } else {
             throw new IllegalArgumentException("invalid product's name");
         }
-
         setPrice(price);
         setWeight(weight);
     }
