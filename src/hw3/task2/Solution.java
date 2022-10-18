@@ -15,6 +15,7 @@ public class Solution {
         printRandomMultiplicationTable2(2, 9, 15);
     }
 
+
     //1 способ с применением List
     private static void printRandomMultiplicationTable1(int from, int to, int count) {
 
@@ -63,7 +64,7 @@ public class Solution {
             to = tmp;
         }
         // количество всех цифр таблицы умножения
-        int n = (Math.abs(from) + 1) - Math.abs(to);
+        int n = Math.abs(from + 1 - to);
 
         // максимальное количество возможных вариантов примеров
         // сумма арифметической прогрессии от 1 до n
@@ -87,7 +88,6 @@ public class Solution {
             System.out.println(exam);
         }
     }
-
 
     private static int randomInt(int from, int to) {
         ++to;
