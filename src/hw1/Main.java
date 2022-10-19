@@ -2,7 +2,7 @@ package hw1;
 
 public class Main {
     public static void main(String[] args) {
-        ProductSet products = new ProductSet();
+        ProductBasket products = new ProductBasket();
 
         Product potato = new Product("картофель", 40.5, 6);
         Product milk = new Product("молоко", 56, 0.5);
@@ -17,10 +17,5 @@ public class Main {
         products.remove(milk);
         System.out.println(products);
 
-        products.check(meat);
-        products.check(milk);
-        products.check(potato);
-
-        products.add(potato);
     }
 }

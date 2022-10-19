@@ -2,18 +2,18 @@ package hw2.task1;
 
 import hw1.Product;
 
+import java.util.Map;
 import java.util.Objects;
-import java.util.Set;
 
 public class Recipe {
 
     private final String name;
 
-    private final Set<Product> products;
+    private final Map<Product, Integer> products;
 
     private final double price;
 
-    public Recipe(String name, Set<Product> products) {
+    public Recipe(String name, Map<Product, Integer> products) {
         if (name != null && !name.isEmpty() && !name.isBlank()) {
             this.name = name;
         } else {
@@ -24,7 +24,7 @@ public class Recipe {
         } else {
             throw new IllegalArgumentException("products not found");
         }
-        this.price = sum();
+        this.price = sumPrice();
     }
 
 
@@ -32,7 +32,7 @@ public class Recipe {
         return name;
     }
 
-    public Set<Product> getProducts() {
+    public Map<Product, Integer> getProducts() {
         return products;
     }
 
@@ -59,10 +59,10 @@ public class Recipe {
                 + getProducts() + "\n";
     }
 
-    private double sum() {
+    private double sumPrice() {
         double sum = 0;
-        for (Product product : products) {
-            sum += product.getPrice();
+        for (Map.Entry<Product, Integer> entry : products.entrySet()) {
+            sum += entry.getKey().getPrice() * entry.getKey().getWeight() * entry.getValue();
         }
         return sum;
     }
