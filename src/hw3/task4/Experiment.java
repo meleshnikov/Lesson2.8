@@ -3,7 +3,7 @@ package hw3.task4;
 import java.util.*;
 
 public class Experiment {
-    private static final int COUNT = 20_000_000;
+    private static final int COUNT = 100_000;
     private static final List<Integer> arrayList = new ArrayList<>(COUNT);
     private static final List<Integer> linkedList = new LinkedList<>();
     private static final Set<Integer> hashSet = new HashSet<>();
