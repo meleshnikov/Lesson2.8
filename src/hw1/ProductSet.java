@@ -21,6 +21,10 @@ public class ProductSet {
         }
     }
 
+    public void remove(Product product) {
+        products.remove(product);
+    }
+
     public void check(Product product) {
         System.out.println(product.getName() + " есть в списке? - " + (products.contains(product) ? "да" : "нет"));
     }

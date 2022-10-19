@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println(products);
 
-        products.getProducts().remove(milk);
+        products.remove(milk);
         System.out.println(products);
 
         products.check(meat);
